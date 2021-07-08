@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,14 @@
 		D0EB87F726971A9200947AAF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0EB87F626971A9200947AAF /* Preview Assets.xcassets */; };
 		D0EB880226971A9300947AAF /* ValentineLavTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB880126971A9300947AAF /* ValentineLavTests.swift */; };
 		D0EB880D26971A9300947AAF /* ValentineLavUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB880C26971A9300947AAF /* ValentineLavUITests.swift */; };
+		D0EB881F26971B7200947AAF /* Exercice1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB881E26971B7200947AAF /* Exercice1.swift */; };
+		D0EB882726971B7C00947AAF /* Exercice2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB882626971B7C00947AAF /* Exercice2.swift */; };
+		D0EB882C26971B8700947AAF /* Exercice3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB882B26971B8700947AAF /* Exercice3.swift */; };
+		D0EB8832269728BD00947AAF /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB8831269728BD00947AAF /* Pizza.swift */; };
+		D0EB883A26972AE600947AAF /* OrderPizzaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB883926972AE600947AAF /* OrderPizzaView.swift */; };
+		D0EB8844269730BD00947AAF /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB8843269730BD00947AAF /* OrderCell.swift */; };
+		D0EB8859269746A700947AAF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D0EB8858269746A700947AAF /* Kingfisher */; };
+		D0EB885E2697484F00947AAF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB885D2697484F00947AAF /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +53,13 @@
 		D0EB880826971A9300947AAF /* ValentineLavUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValentineLavUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0EB880C26971A9300947AAF /* ValentineLavUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValentineLavUITests.swift; sourceTree = "<group>"; };
 		D0EB880E26971A9300947AAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0EB881E26971B7200947AAF /* Exercice1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercice1.swift; sourceTree = "<group>"; };
+		D0EB882626971B7C00947AAF /* Exercice2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercice2.swift; sourceTree = "<group>"; };
+		D0EB882B26971B8700947AAF /* Exercice3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercice3.swift; sourceTree = "<group>"; };
+		D0EB8831269728BD00947AAF /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
+		D0EB883926972AE600947AAF /* OrderPizzaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPizzaView.swift; sourceTree = "<group>"; };
+		D0EB8843269730BD00947AAF /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
+		D0EB885D2697484F00947AAF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0EB8859269746A700947AAF /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,11 +111,14 @@
 		D0EB87EE26971A9000947AAF /* ValentineLav */ = {
 			isa = PBXGroup;
 			children = (
+				D0EB8830269728A900947AAF /* Models */,
+				D0EB881D26971B6300947AAF /* Views */,
 				D0EB87EF26971A9000947AAF /* ValentineLavApp.swift */,
 				D0EB87F126971A9000947AAF /* ContentView.swift */,
 				D0EB87F326971A9200947AAF /* Assets.xcassets */,
 				D0EB87F826971A9200947AAF /* Info.plist */,
 				D0EB87F526971A9200947AAF /* Preview Content */,
+				D0EB885D2697484F00947AAF /* Constants.swift */,
 			);
 			path = ValentineLav;
 			sourceTree = "<group>";
@@ -130,6 +149,26 @@
 			path = ValentineLavUITests;
 			sourceTree = "<group>";
 		};
+		D0EB881D26971B6300947AAF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D0EB881E26971B7200947AAF /* Exercice1.swift */,
+				D0EB882626971B7C00947AAF /* Exercice2.swift */,
+				D0EB882B26971B8700947AAF /* Exercice3.swift */,
+				D0EB883926972AE600947AAF /* OrderPizzaView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D0EB8830269728A900947AAF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D0EB8831269728BD00947AAF /* Pizza.swift */,
+				D0EB8843269730BD00947AAF /* OrderCell.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +185,9 @@
 			dependencies = (
 			);
 			name = ValentineLav;
+			packageProductDependencies = (
+				D0EB8858269746A700947AAF /* Kingfisher */,
+			);
 			productName = ValentineLav;
 			productReference = D0EB87EC26971A9000947AAF /* ValentineLav.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +259,9 @@
 				Base,
 			);
 			mainGroup = D0EB87E326971A9000947AAF;
+			packageReferences = (
+				D0EB8857269746A700947AAF /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = D0EB87ED26971A9000947AAF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +304,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0EB883A26972AE600947AAF /* OrderPizzaView.swift in Sources */,
+				D0EB8832269728BD00947AAF /* Pizza.swift in Sources */,
+				D0EB882726971B7C00947AAF /* Exercice2.swift in Sources */,
+				D0EB8844269730BD00947AAF /* OrderCell.swift in Sources */,
+				D0EB882C26971B8700947AAF /* Exercice3.swift in Sources */,
 				D0EB87F226971A9000947AAF /* ContentView.swift in Sources */,
 				D0EB87F026971A9000947AAF /* ValentineLavApp.swift in Sources */,
+				D0EB881F26971B7200947AAF /* Exercice1.swift in Sources */,
+				D0EB885E2697484F00947AAF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,6 +626,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D0EB8857269746A700947AAF /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D0EB8858269746A700947AAF /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0EB8857269746A700947AAF /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D0EB87E426971A9000947AAF /* Project object */;
 }
